@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
 
   // Register a new user
   const register = async (name, email, password, whatsappNumber) => {
-    const res = await axios.post("/api/auth/register", {
+    const res = await axios.post("/auth/register", {
       name,
       email,
       password,
